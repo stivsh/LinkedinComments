@@ -1,0 +1,20 @@
+Unfortunately linkedin hasn't API for working with comments.
+
+This script downloads comments from linkedin, saves data to data.pickle file,
+if file already exists it just append new data but remome all dublicates, data is
+always sorted by time of comment had posted.
+
+
+INSTALL
+1) copy files to any directory
+2) install python 2.7 and set environment variables
+  this is the manual https://docs.python.org/2/using/windows.html
+3) all requirements in requirements.txt, just run pip install -r requirements.txt
+4) python load_comments.py <activity> --loggin=<login> --pass=<password> for loading data
+5) if something went wrong you could load data from the last loaded part, not from the beginning
+6) to create docs run load_comments.py
+
+for more information:
+run python load_comments.py -h
+run python create_docs.py -h
+My email is stivsh@gmail.com don't be hesitate to ask questions.
